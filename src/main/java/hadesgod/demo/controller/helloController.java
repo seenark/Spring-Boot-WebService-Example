@@ -34,7 +34,7 @@ public class helloController {
 
     @PostMapping()
     public void postTopic(@RequestBody Topic topic) {
-        topicService.postTopic(topic);
+        topicService.addTopic(topic);
     }
 
     @PutMapping(path = "/{id}")

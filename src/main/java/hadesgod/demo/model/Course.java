@@ -1,18 +1,14 @@
 package hadesgod.demo.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
-@Entity
-public class Topic {
-    
-    @Id
+public class Course {
     private String id;
     private String name;
     private String description;
 
-    public Topic() {    }
-    public Topic(String id, String name, String description) {
+    public Course() {
+    }
+
+    public Course(String id, String name, String description) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -41,5 +37,4 @@ public class Topic {
     public void setDescription(String description) {
         this.description = description;
     }
-
 }
